@@ -1,0 +1,38 @@
+<!doctype>
+<!-- Single Page App (SPA), this is the only HTML file even send from the Server
+     to the Web Browser (Client).  And then we manipulate this file thru Angular 2 -->
+<html>
+<head>
+    <!-- This sets the base URL, in this case root directory '/'
+         Example:  domain:port/
+         This tells angular where is the root context for the app -->
+    <base href="/">
+    <title>Angular 2 & TypeScript Boilerplate</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 1. Load libraries -->
+    <!-- Polyfill(s) for older browsers, in this exact order -->
+    <script src="node_modules/es6-shim/es6-shim.min.js"></script>
+
+    <script src="node_modules/zone.js/dist/zone.js"></script>
+    <script src="node_modules/reflect-metadata/Reflect.js"></script>
+    <script src="node_modules/systemjs/dist/system.src.js"></script> <!-- File Loader -->
+
+    <!-- 2. Configure SystemJS -->
+    <script src="systemjs.config.js"></script>
+
+    <link rel="stylesheet" href="src/css/app.css">
+
+</head>
+<body>
+<!-- The my-app tag is the app's root component, my-app is just
+     a selector to let Angular 2-->
+<my-app>Loading...</my-app>
+<br><br>
+<script>
+    System.import('app').catch(function(err){ console.error(err);  });
+</script>
+<!--<script src="app/bundle.js"></script>-->
+</body>
+</html>
+Status API Training Shop Blog About
+© 2016 GitHub, Inc. Terms
